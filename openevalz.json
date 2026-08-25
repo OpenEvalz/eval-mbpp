@@ -1,0 +1,52 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "mbpp",
+    "slug": "mbpp",
+    "title": "MBPP: Basic Python Coding Challenges",
+    "group": "Coding",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/mbpp",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "scorer"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "mbpp",
+      "samples": 257
+    }
+  ],
+  "total_samples": 257,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "google-research-datasets/mbpp",
+      "state": "pinned"
+    },
+    {
+      "type": "huggingface",
+      "source": "google-research-datasets/mbpp",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
